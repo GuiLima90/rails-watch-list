@@ -1,0 +1,15 @@
+<h1>Lists#create</h1>
+<p>Find me in app/views/lists/create.html.erb</p>
+<h1>Criar nova lista</h1>
+
+<%= form_with model: @list do |f| %>
+  <div>
+    <%= f.label :name, "Nome da lista" %>
+    <%= f.text_field :name %>
+  </div>
+
+  <%= f.submit "Criar lista" %>
+<% end %>
+
+<br>
+<%= link_to "Voltar", lists_path %>
